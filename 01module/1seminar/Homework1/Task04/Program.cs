@@ -19,6 +19,7 @@ namespace Task04
             string b = Console.ReadLine();
             R = int.Parse(b);
             Console.WriteLine("Cила тока I=" + (U / R).ToString("F4"));
+            Console.WriteLine("Мощность Р=" + (Math.Pow(U, 2) / R).ToString("F4"));
 
         }
     }
