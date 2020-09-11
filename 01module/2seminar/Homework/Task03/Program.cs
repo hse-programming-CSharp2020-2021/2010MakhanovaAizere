@@ -44,6 +44,22 @@ namespace Task03
                     y = int.Parse(Console.ReadLine());
                     Console.WriteLine("Введите значение z");
                     z = int.Parse(Console.ReadLine());
+                    while (!int.TryParse(Console.ReadLine(), out x))// при введении символа не верного формата, 
+                                                                    //выводим "Произошла ошибка!""Попробуйте снова"
+                    {
+                        Console.WriteLine("Произошла ошибка!");
+                        Console.WriteLine("Попробуйте снова");
+                    }
+                    while (!int.TryParse(Console.ReadLine(), out y))
+                    {
+                        Console.WriteLine("Произошла ошибка!");
+                        Console.WriteLine("Попробуйте снова");
+                    }
+                    while (!int.TryParse(Console.ReadLine(), out z))
+                    {
+                        Console.WriteLine("Произошла ошибка!");
+                        Console.WriteLine("Попробуйте снова");
+                    }
                     Method(x, y, z);                   //вызываем метод Method
                     Console.WriteLine("Чтобы завершить нажмите ESC");
                     
