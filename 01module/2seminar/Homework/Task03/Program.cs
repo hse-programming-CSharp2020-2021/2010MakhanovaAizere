@@ -16,18 +16,19 @@ namespace Task03
         static void Method( int x,  int y,  int z)/* создаем метод и вводим дополнительные 
                                                         переменные для выполнения условия*/
         {
-            int a , b, c;//Добавляем вспомогательные переменные
-            a = x < y ? (z < x ? z : x) : (z < y ? z : y);
-            b = x < y ? (y < z ? y : z) : (z < x ? z : x);
-            c = x > y ? (z > x ? z : x) : (z > y ? z : y);
+            //Добавляем вспомогательные переменные
+            int minXY = Math.Min(x, y);
+            int maxXY = Math.Max(x, y);
+            int max = maxXY < z ? z : maxXY;
+            int min = minXY > z ? z : minXY;
+            int mid = maxXY == max && minXY == min ? z : x == min || x == max ? y : x;
 
-            x = a;
-            y = b;
-            z = c;
 
-            Console.WriteLine(a);//выводим результат
-            Console.WriteLine(b);
-            Console.WriteLine(c);
+            
+
+            Console.WriteLine(min);//выводим результат
+            Console.WriteLine(mid);
+            Console.WriteLine(max);
         }
         static void Main(string[] args)
         {

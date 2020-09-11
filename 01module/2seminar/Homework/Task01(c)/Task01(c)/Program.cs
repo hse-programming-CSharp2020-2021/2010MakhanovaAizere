@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace Task01(c)
+namespace Task01_c
 {
     class Program
     {
+        /*Ввести значение х и вывести значение полинамо F=12x^4+9x^3-3x^2+2x-4*/
         // добавим метод который выводит значение полинома
         static double Method(double x)
         {
@@ -23,8 +24,7 @@ namespace Task01(c)
                 double a;
                 string str, rep;
                 // можно использовать if{}...else{}
-                do
-                {
+                
                     do
                     {
                         Console.WriteLine("Введите значение x: ");
@@ -34,10 +34,8 @@ namespace Task01(c)
                     // выводим а, вызываем метод
                     Console.WriteLine($"Ответ: {Method(a)}");
 
-                    Console.WriteLine("Нажмите (Y) для повтора программы ");
+                    
                     rep = Console.ReadLine();
-                }
-                while ((rep == "y") || (rep == "Y"));
 
             }
             catch (Exception ex)
