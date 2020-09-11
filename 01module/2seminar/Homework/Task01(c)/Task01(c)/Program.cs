@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 
-namespace CW1
+namespace Task01(c)
 {
     class Program
     {
@@ -22,9 +22,6 @@ namespace CW1
             {
                 double a;
                 string str, rep;
-
-                Console.WriteLine("Самостоятельная работа 1");
-                Console.WriteLine("Требования: Ввести значение x и вывести значение полинома");
                 // можно использовать if{}...else{}
                 do
                 {
