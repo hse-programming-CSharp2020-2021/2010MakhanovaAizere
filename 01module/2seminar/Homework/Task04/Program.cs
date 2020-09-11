@@ -17,7 +17,7 @@ namespace Task04
 
         static void Main(string[] args)
         {
-            do
+            do//do{}while() можно заменить на просто while()
             {
                 Console.Clear();
 

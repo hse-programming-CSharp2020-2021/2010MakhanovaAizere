@@ -33,7 +33,7 @@ namespace Task03
         {
             try
             {
-                do
+                do//do{}while() можно заменить на просто while()
                 {
                     int x, y, z;
                     Console.WriteLine("Введите значение х");
