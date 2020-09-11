@@ -22,15 +22,7 @@ namespace Task04
                 Console.Clear();
 
                 int n;
-
-                while (!int.TryParse(Console.ReadLine(), out n))  
-                {
-                    Console.WriteLine("Произошла ошибка!");
-                    Console.WriteLine("Попробуйте снова");
-                }
-
                 Console.WriteLine($"{Method(n)}");
-
                 Console.WriteLine("Нажмите ESC для выхода");
             }
             while (Console.ReadKey(true).Key != ConsoleKey.Escape); 
