@@ -21,7 +21,7 @@ namespace Task04
             {
                 Console.Clear();
 
-                int n;
+                int n=int.Parse(Console.ReadLine());
                 Console.WriteLine($"{Method(n)}");
                 Console.WriteLine("Нажмите ESC для выхода");
             }
