@@ -31,9 +31,7 @@ namespace Task03_c_
                     int b = int.Parse(Console.ReadLine());
                     Console.WriteLine("c=");
                     int c = int.Parse(Console.ReadLine());
-                    M(a, b, c);//вызываем метод
-                    
-                    Console.WriteLine("Чтобы завершить нажмите ESC");
+                    M(a, b, c);//вызываем метод                    Console.WriteLine("Чтобы завершить нажмите ESC");
                 } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             }
             catch (Exception ex)

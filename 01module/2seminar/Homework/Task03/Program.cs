@@ -22,10 +22,6 @@ namespace Task03
             int max = maxXY < z ? z : maxXY;
             int min = minXY > z ? z : minXY;
             int mid = maxXY == max && minXY == min ? z : x == min || x == max ? y : x;
-
-
-            
-
             Console.WriteLine(min);//выводим результат
             Console.WriteLine(mid);
             Console.WriteLine(max);
@@ -45,7 +41,6 @@ namespace Task03
                     z = int.Parse(Console.ReadLine()); 
                     Method(x, y, z);                   //вызываем метод Method
                     Console.WriteLine("Чтобы завершить нажмите ESC");
-                    
                 } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             }
             catch(Exception ex) //обработка исключений
