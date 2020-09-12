@@ -15,7 +15,7 @@ namespace Task03_c_
             d = (b * b - 4 * a * c);//вычисляем дискриминант
             x1 = (-b + Math.Sqrt(d)) / 2;//вычисляем корень 1
             x2 = (-b - Math.Sqrt(d)) / 2;//вычисляем корень 2
-            Console.WriteLine($"Корни уравнения:{ x1}, { x2}");
+            Console.WriteLine(d>0?$"Корни уравнения:{ x1}, { x2}":"Выявлено наличие комплексных корней");
         }
         static void Main(string[] args)
         {
