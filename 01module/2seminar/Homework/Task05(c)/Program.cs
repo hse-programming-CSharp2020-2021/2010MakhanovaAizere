@@ -31,10 +31,10 @@ namespace Task05_c_
                 {
                     Console.WriteLine("Выполняется ли неравенство треугольника?");
                     Console.WriteLine("Введите длины сторон треугольника(три вещественных числа)");
-                    double a = double.Parse(Console.ReadLine());
+                    double a = double.Parse(Console.ReadLine());//вводим переменные
                     double b = double.Parse(Console.ReadLine());
                     double c = double.Parse(Console.ReadLine());
-                    M(a, b, c);
+                    M(a, b, c);//вызываем метод М
                     Console.WriteLine("Чтобы завершить нажмите ESC");
                 } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             }
