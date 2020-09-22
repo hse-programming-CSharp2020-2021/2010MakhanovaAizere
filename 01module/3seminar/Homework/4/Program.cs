@@ -36,9 +36,9 @@ namespace _4
                 do
                 {
                     Console.WriteLine("Введите два числа");
-                    double a = double.Parse(Console.ReadLine());
+                    double a = double.Parse(Console.ReadLine());//вводим две переменные
                     double b = double.Parse(Console.ReadLine());
-                    M(a, b);
+                    M(a, b);//вызываем метод
                     Console.WriteLine("Чтобы завершить нажмите ESC");
                 } while (Console.ReadKey(true).Key != ConsoleKey.Escape);
             }
